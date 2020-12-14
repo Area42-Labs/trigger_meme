@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Cloning dependencies"
-git clone --depth=1 https://gitlab.com/Forenche/https-github.com-stormbreaker-project-kernel_xiaomi_surya -b  master  kernel
+git clone --depth=1 https://gitlab.com/Forenche/https-github.com-stormbreaker-project-kernel_xiaomi_surya -b  meme  kernel
 cd kernel
 git clone --depth=1 https://github.com/kdrag0n/proton-clang clang
 git clone --depth=1 https://github.com/stormbreaker-project/AnyKernel3 -b surya AnyKernel
@@ -26,7 +26,7 @@ function sendinfo() {
         -d chat_id="$chat_id" \
         -d "disable_web_page_preview=true" \
         -d "parse_mode=html" \
-        -d text="<b>• surya-Stormbreaker Kernel •</b>%0ABuild started on <code>Circle CI</code>%0AFor device <b>Poco x3</b> (RMX1851)%0Abranch <code>$(git rev-parse --abbrev-ref HEAD)</code>(master)%0AUnder commit <code>$(git log --pretty=format:'"%h : %s"' -1)</code>%0AUsing compiler: <code>$(${GCC}gcc --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')</code>%0AStarted on <code>$(date)</code>%0A<b>Build Status:</b>#Stable"
+        -d text="<b>• surya-Stormbreaker Kernel for meme •</b>%0ABuild started on <code>Circle CI</code>%0AFor device <b>Poco x3</b> (RMX1851)%0Abranch <code>$(git rev-parse --abbrev-ref HEAD)</code>(master)%0AUnder commit <code>$(git log --pretty=format:'"%h : %s"' -1)</code>%0AUsing compiler: <code>$(${GCC}gcc --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')</code>%0AStarted on <code>$(date)</code>%0A<b>Build Status:</b>#Stable"
 }
 # Push kernel to channel
 function push() {
