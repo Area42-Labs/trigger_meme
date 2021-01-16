@@ -54,7 +54,10 @@ function compile() {
                              ARCH=arm64 \
 			     CC=clang \
 			     CROSS_COMPILE=aarch64-linux-gnu- \
-			     CROSS_COMPILE_ARM32=arm-linux-gnueabi-
+			     CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
+			     NM=llvm-nm \
+			     OBJCOPY=llvm-objcopy \
+			     LD=ld.lld
    cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
    python2 "libufdt/utils/src/mkdtboimg.py" \
 					create "out/arch/arm64/boot/dtbo.img" --page_size=4096 out/arch/arm64/boot/dts/qcom/*.dtbo
