@@ -13,7 +13,7 @@ jobs:
            git clone https://github.com/akhilnarang/scripts && cd scripts && bash setup/android_build_env.sh && cd ..
            mkdir kernul
            cd kernul
-           wget https://raw.githubusercontent.com/Area42-Labs/trigger_meme/main/.circleci/build.sh
+           wget https://raw.githubusercontent.com/Area42-Labs/trigger_meme/realmeme/.circleci/build.sh
            source build.sh
 workflows:
   version: 2.1
