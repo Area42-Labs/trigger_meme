@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Cloning dependencies"
-git clone --depth=1 https://gitlab.com/Forenche/android_kernel_rmx1851 -b  reb  kernel
+git clone --depth=1 https://gitlab.com/Forenche/android_kernel_rmx1851 -b  a11  kernel
 cd kernel
 git clone --depth=1 https://github.com/kdrag0n/proton-clang clang
 git clone --depth=1 https://github.com/stormbreaker-project/AnyKernel3 -b rmx1851 AnyKernel
